@@ -11,7 +11,7 @@ function App() {
     e.preventDefault();
     try {
       const parsedData = JSON.parse(jsonInput);
-      const res = await axios.post("https://b-front-ecru.vercel.app/bfhl", {
+      const res = await axios.post("http://localhost:3001/bfhl", {
         data: parsedData.data,
       });
       setResponse(res.data);
