@@ -11,9 +11,12 @@ function App() {
     e.preventDefault();
     try {
       const parsedData = JSON.parse(jsonInput);
-      const res = await axios.post("http://localhost:3001/bfhl", {
-        data: parsedData.data,
-      });
+      const res = await axios.post(
+        "https://b-front-gaurang-singhs-projects.vercel.app/",
+        {
+          data: parsedData.data,
+        }
+      );
       setResponse(res.data);
       setError(null);
     } catch (err) {
