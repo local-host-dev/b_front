@@ -12,7 +12,7 @@ function App() {
     try {
       const parsedData = JSON.parse(jsonInput);
       const res = await axios.post(
-        "https://b-front-gaurang-singhs-projects.vercel.app/",
+        "https://b-front-gaurang-singhs-projects.vercel.app/bfhl",
         {
           data: parsedData.data,
         }
